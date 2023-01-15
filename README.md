@@ -1,5 +1,4 @@
-# A very simple python3 logger written in python3
+# A very simple logger written for branch!
 
 TODO:
 - Support file log 
-- Support custom callback registration
