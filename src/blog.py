@@ -93,7 +93,7 @@ def info(log):
     module = inspect.getmodule(frame[0]).__name__
 
     for output_prov in OUTPUT_PROVIDERS:
-        output_prov(module, "WARN", log)
+        output_prov(module, "INFO", log)
 
     if(CONFIG_OPTIONS["NO_TERM"]):
         print("[INFO] {}: {} ".format(module, log))
@@ -105,7 +105,7 @@ def web_log(log):
     module = inspect.getmodule(frame[0]).__name__
 
     for output_prov in OUTPUT_PROVIDERS:
-        output_prov(module, "WARN", log)   
+        output_prov(module, "WEB", log)   
 
     if(CONFIG_OPTIONS["NO_TERM"]):
         print("[WEB] {}: {} ".format(module, log))
@@ -117,7 +117,7 @@ def debug(log):
     module = inspect.getmodule(frame[0]).__name__
 
     for output_prov in OUTPUT_PROVIDERS:
-        output_prov(module, "WARN", log)
+        output_prov(module, "DEBUG", log)
 
     if(CONFIG_OPTIONS["DEBUG_LOG"]):
         if(CONFIG_OPTIONS["NO_TERM"]):
