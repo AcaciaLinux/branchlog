@@ -1,4 +1,4 @@
-from log import blog
+import blog
 
 print("Terminal color disabled:")
 blog.CONFIG_OPTIONS["NO_TERM"] = True
